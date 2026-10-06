@@ -1,4 +1,4 @@
-# AMO listing draft
+# AMO listing
 
 **Name:** Reddit Video Save
 **Add-on ID:** reddit-video-save@asebbas.github.io (permanent once published)
@@ -7,7 +7,7 @@
 **Categories (suggested):** Download Management; Photos, Music & Videos
 **Tags:** reddit, video, download, v.redd.it, mp4
 
-## Summary (<=250 chars)
+## Summary 
 Save Reddit-hosted videos with sound as a single MP4. Right-click a post link or video, or use the toolbar button. Works on old and new Reddit. No tracking, no external services.
 
 ## Description
@@ -44,8 +44,6 @@ Data collection declared in manifest: none. No analytics, no remote code, no thi
 - No remote code, no eval, no data leaves the browser except requests to Reddit.
 - To test: open any post with a Reddit-hosted video (e.g. in r/videos or r/interestingasfuck), click the toolbar button on the post page; an MP4 is saved to Downloads.
 
-## Screenshots to capture (AMO wants at least one; 1280x800 or similar)
-1. Context menu on a post link in a feed (new Reddit).
-2. Context menu on the video player on a post page.
-3. Toolbar button on a post page + the resulting download in Firefox's downloads panel.
-4. (Optional) old.reddit context menu.
+## Screenshots 
+<img width="606" height="315" alt="screenshot" src="https://github.com/user-attachments/assets/65e51838-6167-4451-9555-95990cd4e394" />
+
