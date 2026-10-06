@@ -1,0 +1,37 @@
+{
+  "name": "reddit-video-save",
+  "version": "0.1.1",
+  "description": "Firefox add-on: download Reddit videos with audio as one MP4",
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "npm run build && web-ext lint -s dist",
+    "run": "npm run build && web-ext run -s dist",
+    "package": "npm run build && web-ext build -s dist -a web-ext-artifacts --overwrite-dest",
+    "package:source": "git archive --format=zip -o web-ext-artifacts/source.zip HEAD"
+  },
+  "keywords": [],
+  "author": "asebbas",
+  "license": "MIT",
+  "dependencies": {
+    "mediabunny": "^1.61.3"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^143.0.1",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "web-ext": "^10.7.0"
+  },
+  "private": true,
+  "homepage": "https://github.com/asebbas/reddit-video-save",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asebbas/reddit-video-save.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asebbas/reddit-video-save/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

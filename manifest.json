@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Video Save",
+  "version": "0.1.1",
+  "description": "Download Reddit-hosted (v.redd.it) videos with audio as a single MP4. Right-click a post link or video, or use the toolbar button on a post page.",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-video-save@asebbas.github.io",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  },
+  "permissions": [
+    "menus",
+    "contextMenus",
+    "downloads",
+    "activeTab",
+    "notifications"
+  ],
+  "host_permissions": [
+    "*://*.reddit.com/*",
+    "*://v.redd.it/*",
+    "*://redd.it/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_title": "Save Reddit video",
+    "default_icon": "icons/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "homepage_url": "https://github.com/asebbas/reddit-video-save"
+}
